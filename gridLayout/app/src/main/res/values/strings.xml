@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">gridLayout</string>
+    <string name="to">To</string>
+    <string name="to_hint">Send whom?</string>
+    <string name="message">Type Message here</string>
+    <string name="send">Send</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+</resources>
