@@ -1,19 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:hint="Result appear here"
+        android:id="@+id/txtView"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:id="@+id/message"
+        android:inputType="textAutoCorrect"
+        android:hint="@string/message" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:onClick="print"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="@string/send" />
+    <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textOff="@string/off"
+        android:textOn="@string/on"
+        android:id="@+id/toggle_button"
+        android:layout_gravity="center"
+        android:onClick="ontoggleclicked"
+        />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="@string/on"
+        android:textOff="@string/off"
+        android:onClick="onSwitchClicked"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:layout_gravity="center"
+        android:id="@+id/switch_view" />
+    <CheckBox
+        android:id="@+id/chk_milk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:onClick="milk_chk"
+        android:text="milk" />
+    <CheckBox
+        android:id="@+id/chk_sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:text="Sugar" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_group"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RadioButton
+        android:id="@+id/radio_male"
+        android:text="@string/male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_female"
+            android:text="@string/female"/>
+
+    </RadioGroup>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinner_data"
+        android:layout_gravity="right"
+        android:textAlignment="center"
+        android:id="@+id/spinner"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_gravity="center"
+        android:contentDescription="@string/ic_launcher"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/ic_launcher"
+        android:text="@string/click_me"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round"
+        android:onClick="img_btn_clicked"
+        android:id="@+id/img_btn"/>
+
+</LinearLayout>
+
+</ScrollView>

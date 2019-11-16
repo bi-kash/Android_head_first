@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">widgets</string>
+    <string name="to">To</string>
+    <string name="to_hint">Send whom?</string>
+    <string name="message">Type Message here</string>
+    <string name="send">Send</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+
+
+    <string-array name="spinner_data">
+        <item>Light</item>
+        <item>amber</item>
+        <item>brown</item>
+        <item>dark</item>
+    </string-array>
+    <string name="ic_launcher">ic_launcher_image_description</string>
+    <string name="click_me">Click Me</string>
 </resources>
