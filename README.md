@@ -1,3 +1,1 @@
-Learning Android Development -> Hobby
-Trying out new stuff
-
+Learning Android Development 
